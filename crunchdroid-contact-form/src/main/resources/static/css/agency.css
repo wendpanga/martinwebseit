@@ -120,6 +120,31 @@ fieldset[disabled] .btn-primary.active {
   background-color: #fec503;
   border-color: #f6bf01;
 }
+.box-1{
+	background-color:#333;
+	color:#fff;
+
+	border-right:5px red solid;
+	border-left:5px red solid;
+	border-top:5px red solid;
+	border-bottom:5px red solid;
+	border-width:3px;
+	border-bottom-width:10px;
+	border-top-style:dotted;
+
+	border: 5px red solid;
+
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-right:20px;
+	padding-left:20px;
+
+	/* Same as above */
+	padding:20px;
+
+	margin-top:20px;
+	margin:20px 0;
+}
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
@@ -568,13 +593,13 @@ section#contact .form-group {
   margin-bottom: 25px;
 }
 section#contact .form-group input,
-section#contact .form-group textarea {
-  padding: 20px;
+section#contact .form-group  {
+  padding: 40px;
 }
 section#contact .form-group input.form-control {
   height: auto;
 }
-section#contact .form-group textarea.form-control {
+section#contact .form-group .form-control {
   height: 150px;
 }
 section#contact .form-control:focus {
@@ -854,7 +879,7 @@ width: 100%;
 }
 
 .form-control {
-    width: 60%;
+    width: 30%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -862,4 +887,31 @@ width: 100%;
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+}
+
+
+.my-form1{
+	padding:20px;
+}
+
+.my-form1 .form-group1{
+	padding-bottom:15px;
+}
+
+.my-form1 label{
+	display:block;
+}
+
+.my-form1 input[type="text"], .my-form1 {
+	padding:10%;
+	width:100%;
+}
+
+
+#showcase{
+	background-image:url('../images/showcase.jpg');
+	background-position:center right;
+	min-height:300px;
+	margin-bottom:30px;
+	text-align: center;
 }

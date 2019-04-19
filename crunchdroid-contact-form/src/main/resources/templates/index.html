@@ -52,8 +52,7 @@
 			<div class="collapse navbar-collapse"
 				id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
-					<li class="hidden"><a href="#page-top"></a></li>
-					<li><a class="page-scroll" href="#calss">Class</a></li>
+					<li><a class="page-scroll" href="#calss1">Class</a></li>
 					<li><a class="page-scroll" href="#info">Info</a></li>
 
 					<li><a class="page-scroll" href="#contact">Contact</a></li>
@@ -65,7 +64,7 @@
 	</nav>
 
 	<!-- Header -->
-	<header>
+	<header id="showcase">
 		<div class="container">
 			<div class="intro-text">
 				<div class="intro-heading">Vocal</div>
@@ -76,7 +75,7 @@
 	</header>
 
 	<!-- Class Section -->
-	<section id="class">
+	<section id="Class1">
 		<div class="class1" align="center">
 			<p class="text1">
 				Stimmtraining <br> Sänger, Schauspieler,<br> Dozenten,
@@ -179,7 +178,7 @@
 
 
 	<!-- Contact Section -->
-	<section id="contact">
+	<section id="contact"  >
 
 
 		<div class="info" align="center">
@@ -189,29 +188,29 @@
 				unterrichte in Berlin, Rudow.<br> Anfahrt mit der U7.<br>
 			</p>
 		</div>
-		<div >
+		<div  >
 			<div  class="oqp" align="center" style="position: center">
 				<div role="alert" data-th-if="${message}" data-th-text="${message}"
 					data-th-class="${classCss}"></div>
-				<form   class="oqp" align="center"  style="position: center" name="sentMessage" id="contact_form" novalidate
+				<form    style="position: center" name="sentMessage" id="contact_form" novalidate
 					     data-th-object="${contact}" method="post" data-th-action="@{/}">
 					<div class="oqp" align="center">
-						<div class="col-lg-6 ">
-							<div class="form-group" align="center">
+						<div class="form-group1">
+							<div  align="center">
 								<input type="text" class="form-control"
 									placeholder="Your Name *" data-th-field="*{name}">
 								<p class="help-block text-danger"
 									data-th-if="${#fields.hasErrors('name')}"
 									data-th-errors="*{name}"></p>
 							</div>
-							<div class="form-group">
+							<div >
 								<input type="email" class="form-control"
 									placeholder="Your Email *" data-th-field="*{email}">
 								<p class="help-block text-danger"
 									data-th-if="${#fields.hasErrors('email')}"
 									data-th-errors="*{email}"></p>
 							</div>
-							<div class="form-group"   >
+							<div    >
 								<input type="tel" class="form-control"
 									placeholder="Your Phone *" data-th-field="*{phone}">
 								<p class="help-block text-danger"
@@ -219,14 +218,14 @@
 									data-th-errors="*{phone}"></p>
 							</div>
 
-							<div class="form-group">
+							<div >
 								<input type="tel" class="form-control"
 									placeholder="Your Subject *" data-th-field="*{subject}">
 								<p class="help-block text-danger"
 									data-th-if="${#fields.hasErrors('subject')}"
 									data-th-errors="*{subject}"></p>
 							</div>
-							<div class="form-group">
+							<div >
 								<textarea class="form-control" placeholder="Your Message *"
 									data-th-field="*{message}"></textarea>
 								<p class="help-block text-danger"
@@ -234,10 +233,10 @@
 									data-th-errors="*{message}"></p>
 							</div>
 						</div>
-						<div class="col-lg-12 text-center">
+						<div class="form-group1">
 							<div id="success"></div>
 							<button type="submit" class="btn btn-xl" width="48" height="48"
-								style="position: absolute; right: 600px;">Send Message</button>
+								style="position: absolute; right: 20%;">Send Message</button>
 						</div>
 					</div>
 				</form>
